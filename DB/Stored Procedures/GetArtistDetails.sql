@@ -1,0 +1,9 @@
+CREATE PROCEDURE dbo.GetArtistDetails
+
+AS
+BEGIN
+
+	SELECT *
+	FROM Artist
+
+END
