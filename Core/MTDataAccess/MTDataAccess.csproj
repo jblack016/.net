@@ -66,12 +66,21 @@
   <ItemGroup>
     <Compile Include="DataTableExtensions.cs" />
     <Compile Include="DB.cs" />
+    <Compile Include="Models\AlbumModel.cs" />
+    <Compile Include="Models\ArtistModel.cs" />
+    <Compile Include="Models\SongModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DB\MultiTracksDB.sqlproj">
+      <Project>{c0455f77-4c86-44ab-a96f-fd433ba1c3bb}</Project>
+      <Name>MultiTracksDB</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
